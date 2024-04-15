@@ -1,7 +1,8 @@
 <letter/>
 <p>Do you accept?</p>
-<input type="checkbox" (click)="jumpAccept = !jumpAccept">
-@if(jumpAccept) {
+<input (change)="accept()" type="checkbox">
+@if(accepted) {
   <jump/>
 }
+
 
