@@ -11,7 +11,7 @@ import {NgComponentOutlet} from "@angular/common";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-//hello
+
   public ninja!: Type<any>;
 
   async accept(): Promise<void> {
