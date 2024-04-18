@@ -1,8 +1,20 @@
-<letter/>
-<p>Do you accept?</p>
-<input (change)="accept()" type="checkbox">
-@if(accepted) {
-  <jump/>
-}
+
+
+<div class="min-h-screen flex items-center justify-center bg-red-500 text-white">
+  <div class="text-center">
+    <h1 class="text-4xl font-bold mb-4">Hey, do you want to join the Red Team?</h1>
+    <p class="text-xl mb-6">Learn the new nice things in Angular</p>
+    <ul></ul>
+    <form>
+      <label  class="inline-flex items-center">
+        <span class="ml-2">Yes, I want to join!</span>
+        <input class="form-checkbox h-5 w-5 text-red-600" (change)="accept()" type="checkbox">
+
+      </label>
+      <ng-container [ngComponentOutlet]="ninja" />
+    </form>
+  </div>
+</div>
+
 
 

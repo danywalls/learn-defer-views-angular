@@ -4,10 +4,9 @@ import {NgOptimizedImage} from "@angular/common";
 @Component({
   selector: 'jump',
   template: `
-    <section class="bg-white rounded-lg shadow px-8 py-5 mb-10">
-      <h2 class="text-xl text-center font-semibold p-5">Welcome to Red Side!!!</h2>
-      <img src="assets/developer.webp" alt="Logo">
-
+    <section class="flex flex-col items-center">
+      <h2 class="text-xl text-center font-semibold p-5">Welcome to Angular!!!! side!!!</h2>
+      <img src="assets/kendo.png" class="r-50" alt="Logo">
     </section>
 
   `,
@@ -17,6 +16,6 @@ import {NgOptimizedImage} from "@angular/common";
   standalone: true
 })
 
-export class JumpComponent  {
+export class NinjaComponent {
 
 }
