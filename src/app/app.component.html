@@ -11,7 +11,9 @@
         <input class="form-checkbox h-5 w-5 text-red-600" (change)="accept()" type="checkbox">
 
       </label>
-      <ng-container [ngComponentOutlet]="ninja" />
+      @if(accepted) {
+        <ninja/>
+      }
     </form>
   </div>
 </div>
