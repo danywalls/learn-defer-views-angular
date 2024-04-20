@@ -4,14 +4,26 @@
   <div class="text-center">
     <h1 class="text-4xl font-bold mb-4">Hey, do you want to join the Red Team?</h1>
     <p class="text-xl mb-6">Learn the new nice things in Angular</p>
-    <ul></ul>
+    <ul>
+      <li>Defer Views</li>
+      <li>Signals</li>
+      <li>SSR</li>
+    </ul>
     <form>
       <label  class="inline-flex items-center">
         <span class="ml-2">Yes, I want to join!</span>
         <input class="form-checkbox h-5 w-5 text-red-600" (change)="accept()" type="checkbox">
 
       </label>
-      <ng-container [ngComponentOutlet]="ninja" />
+      @defer (when accepted) {
+        <ninja/>
+      }
+      @loading (minimum 5s) {
+        <h2>Loading...</h2>
+      }
+      @placeholder {
+        <p>Are you ready ?</p>
+      }
     </form>
   </div>
 </div>
