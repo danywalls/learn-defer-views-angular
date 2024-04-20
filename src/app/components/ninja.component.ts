@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 
 @Component({
-  selector: 'jump',
+  selector: 'ninja',
   template: `
     <section class="flex flex-col items-center">
       <h2 class="text-xl text-center font-semibold p-5">Welcome to Angular!!!! side!!!</h2>
